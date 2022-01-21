@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;700;900&family=Ubuntu&display=swap");
+
+body {
+  background-color: #feece9;
+  font-family: "Montserrat", sans-serif;
+}
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  line-height: 1.5;
+}
+h1 {
+  background: #d83f56;
+  border-bottom: 4px solid #bb364a;
+  border-right: 4px solid #bb364a;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 3.5rem;
+  padding: 10px;
+}
+h2 {
+  font-size: 2.5rem;
+}
+
+/* NAVBAR */
+.tindog-logo {
+  transform: scaleX(-1);
+}
+.tindog_title {
+  font-family: "Lobster", cursive;
+  font-size: 40px;
+}
+.container-fluid {
+  padding: 2% 15%;
+}
+.navbar {
+  padding: 0 0 4.25rem;
+}
+.nav-item {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+}
+.nav-item:hover {
+  border-bottom: 2px solid #bb364a;
+}
+
+/* HEADER */
+.download-btns-container {
+  text-align: center;
+}
+.download-btn {
+  margin-bottom: 20px;
+}
+.mockup-div {
+  padding-left: 25%;
+}
+.mockup-img {
+  position: absolute;
+  transform: rotate(25deg);
+  width: 60%;
+}
+
+/* FEATURES */
+.features-div div:hover {
+  background-color: #ef8172;
+  box-shadow: -2px -2px 7px rgba(0, 0, 0, 0.39);
+  color: #fff;
+  transition: 0.3s;
+}
+.features-div div:hover i.feature-icon {
+  color: #fff;
+  transition: 0.3s;
+}
+.feature-icon {
+  color: #ef8172;
+}
+
+/* TESTIMONIALS */
+.dog-testimonial-img {
+  width: 20%;
+  border-radius: 50%;
+}
+
+/* PRESS */
+.press-logo {
+  filter: saturate(5);
+  width: 90%;
+}
+
+/* PLANS */
+.card {
+  transition: 0.1s;
+}
+.card:hover {
+  border: 2px solid rgb(77, 77, 77);
+  border-radius: 5px;
+  box-shadow: -2px -2px 5px rgb(77, 77, 77);
+}
+.card:hover img {
+  filter: saturate(2);
+}
+.card-body {
+  background-color: #ef8172;
+}
+.card-body ul {
+  border-radius: 5px;
+}
+.card-body ul li {
+  background-color: #ff4c68;
+  color: #fff;
+}
+.plans-text {
+  border-bottom: 2px solid rgb(180, 180, 180);
+}
+
+/* CTA */
+.cta-container {
+  padding: 10% 20%;
+}
+.download-btn-final {
+  margin: 10px 20px;
+}
+
+/* FOOTER */
+.footer-container {
+  padding: 5% 20%;
+}
+.list-group-footer li {
+  background-color: #feece9;
+  border: none;
+}
+.footer-icon {
+  border: 2px solid #feece9;
+  border-radius: 50%;
+  padding: 20px;
+  transition: 0.3s;
+}
+.footer-icon:hover {
+  background-color: rgb(190, 190, 190);
+  transform: rotate(10deg);
+}
+.fa-twitter {
+  color: #00acee;
+  border-color: #00acee;
+}
+.fa-facebook {
+  color: #3b5998;
+  border-color: #3b5998;
+}
+.fa-instagram {
+  color: #c13584;
+  border-color: #c13584;
+}
+.fa-envelope {
+  color: #fbbc05;
+  border-color: #fbbc05;
+}
+#title,
+#cta {
+  background-color: #ff4c68;
+}
+#testimonials {
+  background-color: #ef8172;
+}
+#features .container-fluid {
+  background-color: #feece9;  
+  position: relative;
+  z-index: 1;
+}
+#press {
+  background-color: #ecdbd8;
+}
+#press, #features .container-fluid{
+  box-shadow: -2px -2px 10px -1px rgba(0, 0, 0, 0.589);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 992px) {
+  h1, .nav-item {
+    text-align: center;
+  }
+  .nav-item {
+    letter-spacing: 1px;
+    font-size: 30px;    
+  }
+  .download-btn {
+    margin-top: 30px;
+  }
+  .mockup-img {
+    padding: 20px 0;
+    position: static;
+    transform: none;
+  }
+  .feature-explanation h3 {
+    font-size: 2rem;
+  }
+  .feature-explanation p {
+    font-size: 2rem;
+  }
+  .testimonial-author {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  .press-logo {
+    margin-bottom: 40px;
+  }
+  .mastiff-card {
+    margin-top: 40px;
+  }
+  .pricing-details li, .sign-up-btn {
+    font-size: 1.4rem;
+  }
+  .download-btn-final {
+    margin: 10px 0;
+  }
+  .download-btn, .download-btn-final {
+    font-size: 1.5rem;
+  }
+}
